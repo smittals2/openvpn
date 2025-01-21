@@ -459,7 +459,7 @@ jobs:
         with:
           path: aws-lc
           repository: aws/aws-lc
-          ref: main
+          ref: v1.42.0
       - name: "AWS-LC: build"
         run: |
           mkdir build
