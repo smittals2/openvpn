@@ -464,7 +464,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../aws-lc-install -DBUILD_SHARED_LIBS=1 ../
+          cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${{ env.AWS_LC_INSTALL }}" -DBUILD_SHARED_LIBS=1 ../
           ninja install
         working-directory: aws-lc
       - name: Checkout OpenVPN

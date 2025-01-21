@@ -1,5 +1,4 @@
 This version of OpenVPN supports AWS-LC (AWS Libcrypto), AWS's open-source cryptographic library.
-AWS-LC has been FIPS validated by NIST and has 140-3 certificates for both dynamic and static builds.
 
 If you encounter bugs in OpenVPN while using AWS-LC:
 1. Try compiling OpenVPN with OpenSSL to determine if the issue is specific to AWS-LC
@@ -22,4 +21,3 @@ When running tests, LD_LIBRARY_PATH must be passed in again:
 *************************************************************************
 Due to limitations in AWS-LC, the following features are missing
 * Windows CryptoAPI support
-* Using TLS1_PRF through the EVP_PKEY API
